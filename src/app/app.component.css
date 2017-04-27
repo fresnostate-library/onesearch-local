@@ -1,0 +1,105 @@
+#scopeLinks
+{
+    /*white-space: nowrap;*/
+    width:auto;
+    max-width:100%;
+    min-width:23em;
+    background-color: white;
+    display:inline-block;
+    padding-right:2em;
+    position: relative;
+    z-index: 5;
+ 
+}
+#scopeLinks ul li a
+{
+  list-style: none;
+  background-color: white; 
+  text-decoration: none; 
+}
+#scopeLinks ul li
+{
+  list-style: none;
+  margin-left:0px;
+
+}
+.tinyMagnify
+{
+    width:20px;
+    height:20px;
+    vertical-align:middle;
+}
+.searchBarMagnify
+{
+    width:20px;
+    height:20px;
+    /*vertical-align:middle;*/
+}
+#primoSearch input
+{
+    /*width:85%;*/
+    flex:1;
+    /*height:100%;*/
+    margin-right:0px;
+    position: relative;
+    padding-left:1em;
+    z-index: 10;
+    border:none !important; 
+   
+}
+#primoSearch button
+{
+    margin-left:0px;
+    height:100%;
+    vertical-align: bottom
+}
+#searchInputBar
+{
+    display:flex;
+    width:75%;
+    float:left;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,.2) !important;
+    /*background-color:blue;*/
+}
+
+#advancedSearch
+{
+
+    background-color:#f7f7f7;
+}
+
+#primoSearchBar
+{
+    /*background-color:pink;*/
+   height:3em;
+   display:flex;
+        -webkit-justify-content:space-between;
+        -ms-flex-pack:justify;
+    justify-content:space-between;
+}
+#primoSearch 
+{
+    /*background-color:grey;*/
+    margin:1em;
+   
+}
+#primoSearch button
+{
+    border:none;
+
+}
+#primoSearchBar button:hover
+{
+    background-color:rgba(58,58,58,.1);
+}
+#searchInputBar > button
+{
+    background-color:white;
+    float:right;
+}
+#searchInputBar > button:hover
+{
+    fill:white;
+    background-color:#365981;
+}
+
