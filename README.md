@@ -38,7 +38,7 @@ Running the equivalent CLI commands will result in an error.
 
 * Link to those js files from the footer of the webpages where you will use the search box. You can get the boilerplate for those from the html file output from the build command.
 
-* Place the "&gt;app-root&lt;Loading . . .&gt;/app-root&lt;" where you want the seach box to appear in the HTML.
+* Place the "&lt;app-root&gt;Loading . . .&lt;/app-root&gt;" where you want the seach box to appear in the HTML.
 
 
 
