@@ -25,7 +25,7 @@ Running the equivalent CLI commands will result in an error.
 * Run npm install from the project folder to get dependencies
 `npm install`
 
-* Build existing and project for development
+* Build existing project for development
    `npm start`
    
 * Point your web browser to the local addesss cited in the build output.  e.g http://localhost:8082/
