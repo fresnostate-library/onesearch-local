@@ -22,7 +22,10 @@ To run your builds, you now need to do the following commands:
 Running the equivalent CLI commands will result in an error.
 `
 ## Customizing it for your institution
-* Build existing and project
+* Run npm install from the project folder to get dependencies
+`npm install`
+
+* Build existing and project for development
    `npm start`
    
 * Point your web browser to the local addesss cited in the build output.  e.g http://localhost:8082/
