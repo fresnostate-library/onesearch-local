@@ -13,6 +13,7 @@ import { DOCUMENT } from '@angular/platform-browser';
 export class AppComponent {
   /* ### Customize these variables for your campus. ### */
   primoBaseUrl = "http://csuf-primosb.hosted.exlibrisgroup.com/primo-explore/";
+  primoPlaceholder = "Search Anything";
   primoView = "01CALS_FUL";
 
   tabTxtDefault = "OneSearch Articles, Books & More";
