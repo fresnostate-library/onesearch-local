@@ -1,6 +1,7 @@
 # An ignore file with typical Windows and Mac OS settings, as well as node stuff.
 
 # ########## Node Section
+dist/
 node_modules/
 npm-debug.log
 
