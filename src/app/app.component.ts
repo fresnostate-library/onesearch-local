@@ -39,8 +39,8 @@ export class AppComponent {
     //create holder for target or srcElement to support common browsers
     var src = event.target||event.srcElement;
 
-    console.log("focusingCheck Firing");
-    console.log("focusing" + src.attributes.id.value);
+    //console.log("focusingCheck Firing");
+    //console.log("focusing" + src.attributes.id.value);
     this.foci.Add(src.attributes.id.value, true);
     this.determineScopesDisplay();
   }
@@ -50,9 +50,9 @@ export class AppComponent {
     //create holder for target or srcElement to support common browsers
     var src = event.target||event.srcElement;
 
-    console.log("blurring" + src.attributes.id.value);
+    //console.log("blurring" + src.attributes.id.value);
     this.foci.Remove(src.attributes.id.value, true);
-    console.log(this.foci.count)
+    //console.log(this.foci.count)
 
     if (this.foci.count < 1) {
       this.displayScopes = false;
@@ -84,8 +84,8 @@ export class AppComponent {
 
 
   determineScopesDisplay() {
-    console.log("determining scopes display");
-    console.log(this.foci.count);
+    //console.log("determining scopes display");
+    //console.log(this.foci.count);
     if (this.searchStr.length != 0 && this.foci.count > 0) {
       this.displayScopes = true;
     }
@@ -102,19 +102,19 @@ export class AppComponent {
     //create holder for target or srcElement to support common browsers
     var src = event.target||event.srcElement;
 
-    console.log("keyDownFire for: " + event.key);
-    console.log("Event Source: " + src.attributes.id.value);
+    //console.log("keyDownFire for: " + event.key);
+    //console.log("Event Source: " + src.attributes.id.value);
 
     if ((event.key === "ArrowUp" || event.key === "Up" && this.searchStr.length != 0)) {
       let eventSource = parseInt(src.attributes.id.value);
       if (eventSource > 0) {
-        console.log("focusing on link " + (eventSource - 1));
+        //console.log("focusing on link " + (eventSource - 1));
         let inx = eventSource - 1;
         this.foci.Add(eventSource - 1, true);
         document.getElementById(inx.toString()).focus();
       }
       else {
-        console.log("running else for up ");
+        //console.log("running else for up ");
         this.foci.Add(((this.scopesCount-1)).toString(), true);
         document.getElementById((this.scopesCount-1).toString()).focus();
       }
@@ -123,7 +123,7 @@ export class AppComponent {
     if ((event.key === "ArrowDown" || event.key === "Down") && this.searchStr.length != 0) {
 
       if (src.attributes.id.value == "searchBox") {
-        console.log("focusing on first link");
+        //console.log("focusing on first link");
         this.foci.Add(src.attributes.id.value, true);
         //this.scopes[0].focus();
         document.getElementById("0").focus();
@@ -131,14 +131,14 @@ export class AppComponent {
       }
       else if (parseInt(src.attributes.id.value) < (this.scopesCount-1)) {
         let eventSource = parseInt(src.attributes.id.value);
-        console.log("focusing on link " + (eventSource + 1));
+        //console.log("focusing on link " + (eventSource + 1));
         let inx = eventSource + 1;
         this.foci.Add(eventSource + 1, true);
         document.getElementById(inx.toString()).focus();
        //setTimeout(function() {document.getElementById(inx.toString()).focus();},100);
       }
       else {
-        console.log("running else statement ");
+        //console.log("running else statement ");
         this.foci.Add("0", true);
         document.getElementById("0").focus();
        //setTimeout(function() {document.getElementById("0").focus();},100);
@@ -153,7 +153,7 @@ export class AppComponent {
     //create holder for target or srcElement to support common browsers
     var src = event.target||event.srcElement;
 
-    console.log("mouseDownFire");
+    //console.log("mouseDownFire");
     this.foci.Add(src.attributes.id.value, true);
   }
 
