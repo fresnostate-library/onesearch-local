@@ -67,7 +67,7 @@ export class AppComponent {
 
   cleanSearch(rawSearch) {
     this.searchStr = rawSearch;
-    this.encodedString = this.searchStr.replace('&', '%26');
+    this.encodedString = encodeURIComponent(this.searchStr);
     return this.encodedString;
   }
 
